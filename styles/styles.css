@@ -1,0 +1,176 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 300vh;
+  position: relative;
+}
+
+header {
+  display: flex;
+  height: auto;
+  min-height: 80vh;
+  background: linear-gradient(170deg, #199de4 60%, #fff 60%);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  justify-content: center;
+}
+header .about-me {
+  display: grid;
+  align-items: center;
+  grid-template-columns: minmax(280px, 420px) minmax(520px, 820px);
+}
+header .about-me .potrait {
+  width: 100%;
+}
+header .about-me .potrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header .about-me .description {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.25rem 2.75rem;
+  max-width: 70ch;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.14);
+  color: #111;
+}
+header .about-me .description p {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.my-work-div {
+  min-height: 120vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.my-work-div h1, .my-work-div .projects {
+  margin-left: 50px;
+}
+.my-work-div .projects {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 10%;
+  row-gap: 20%;
+}
+.my-work-div .projects .project {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.my-work-div .projects .project img {
+  object-fit: cover;
+  height: 200px;
+  width: 300px;
+  flex: 3;
+}
+.my-work-div .projects .project .project-div {
+  margin-left: 15px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+.my-work-div .projects .project .project-div .project-name {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.my-work-div .projects .project .project-div .project-name p {
+  font-weight: bold;
+  flex: 3;
+  margin-top: 0;
+}
+.my-work-div .projects .project .project-div .project-name .icon {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 1;
+}
+.my-work-div .projects .project .project-div .project-name .icon svg {
+  width: 20px;
+}
+.my-work-div .projects .project .project-div .project-des {
+  flex: 2;
+}
+
+footer {
+  background-color: #0088a9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 80vh;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0px 0px 80px;
+  font-size: 1.6rem;
+  gap: 20px;
+  flex: 2;
+}
+footer .contact-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;
+}
+footer .contact-inner .contact-me {
+  font-size: 3rem;
+}
+footer .contact .contact-number,
+footer .contact .contact-email {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+footer .contact .contact-number svg,
+footer .contact .contact-email svg {
+  margin-top: 7px;
+  height: 20px;
+}
+footer .contact .logo {
+  display: flex;
+  gap: 30px;
+}
+footer .contact .logo img {
+  height: 50px;
+}
+footer .footer-pic {
+  flex: 3;
+}
+footer .footer-pic picture {
+  width: 100%;
+}
+footer .footer-pic picture img {
+  margin-top: 70px;
+  width: 80%;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  header .about-me {
+    grid-template-columns: 1fr;
+  }
+  .my-work-div .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
